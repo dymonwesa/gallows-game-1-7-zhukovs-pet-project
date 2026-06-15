@@ -1,4 +1,6 @@
 public enum NumberOfMistake {
+    NONE,
+
     FIRST{
         static void printGallow(){
             System.out.println("\n\t|" +"------------|" +
@@ -72,6 +74,8 @@ public enum NumberOfMistake {
         }
     };
 
-
+    public NumberOfMistake goNext(NumberOfMistake numberOfMistake){
+        return
+    }
 
 }
