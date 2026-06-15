@@ -3,13 +3,17 @@ import java.util.Random;
 public class GamePattern {
 
     Random random = new Random();
-    final String[] list = {"корова", "человек", "машина"};
+    final String[] list = {
+            "собака"
+
+
+    };
 
     private String randomWord;
 
-    char inputLetter = ' ';
-    char correctLetter = ' ';
-    String chosenWord = " ";
+
+
+
 
 
     public GamePattern(){
@@ -22,9 +26,9 @@ public class GamePattern {
     }
 
     boolean compareChars(char a){
-        for (int i = 0; i < chosenWord.length(); i++)
+        for (int i = 0; i < randomWord.length(); i++)
         {
-            if(a == chosenWord.charAt(i)) {
+            if(a == randomWord.charAt(i)) {
                 return true;
             }
         }
@@ -47,6 +51,7 @@ public class GamePattern {
             System.out.println("Incorrect input");
         }
     }
+
 
 
 

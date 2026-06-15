@@ -7,6 +7,7 @@ public class UIClass {
 
     void startGame() {
         boolean running = true;
+        boolean playRunning = true;
         char inputLetter;
         NumberOfMistakes numberOfMistakes = new NumberOfMistakes();
         while(running) {
@@ -20,12 +21,20 @@ public class UIClass {
                 case 1:
                     GamePattern gamePattern = new GamePattern();
                     String mainWord = gamePattern.getRandomWord();
+                    System.out.println(mainWord);
                     System.out.println("В заданном слове " + gamePattern.getLength(mainWord) + " букв" );
-                    while////////////
-                    System.out.println("Введите букву: ");
-                    inputLetter = scanner.next().charAt(0);
-                    gamePattern.printResultMove(inputLetter);
+                    while(playRunning) {
+                        System.out.println("Введите букву: ");
+                        inputLetter = scanner.next().charAt(0);
+                        gamePattern.printResultMove(inputLetter);
 
+
+
+
+
+
+
+                    }
 
 
 
