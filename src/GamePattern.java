@@ -2,7 +2,6 @@ import java.util.Random;
 
 public class GamePattern {
 
-
     Random random = new Random();
     final String[] list = {"корова", "человек", "машина"};
 
