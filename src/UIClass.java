@@ -7,13 +7,11 @@ public class UIClass {
 
     void startGame() {
         boolean running = true;
-        boolean playRunning = true;
         char inputLetter;
         while(running) {
             System.out.println("\n 1. Начать игру." +
                     "\n 2. Выйти из игры." +
                     "\n");
-
             Scanner scanner = new Scanner(System.in);
             int chooseMove = scanner.nextInt();
             switch (chooseMove) {
@@ -23,17 +21,14 @@ public class UIClass {
                     System.out.println(mainWord);
                     System.out.println(gamePattern.getPointsOfLength());
                     System.out.println("В заданном слове " + gamePattern.getLength(mainWord) + " букв" );
-
+                    boolean playRunning = true;
                     while(playRunning) {
                         System.out.println("Введите букву: ");
                         inputLetter = scanner.next().charAt(0);
                         gamePattern.printResultMove(inputLetter);
-
-
-
-
-
-
+                        if(gamePattern.isWin()) {
+                            System.out.println("");
+                        }
 
                     }
 

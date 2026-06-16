@@ -85,6 +85,28 @@ public class GamePattern {
 
 
 
+    boolean isWordGuessed(){
+        for (int i =0; i <wordOfPoints.length(); i++) {
+            if(wordOfPoints.charAt(i) != '*') {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    boolean isWin(){
+        if(numberOfMistakes.getMistakesCounter() >= 6) {
+            return false;
+        } else if (numberOfMistakes.getMistakesCounter() < 6 && isWin()){
+            return true;
+        }
+
+    }
+
+
+
+
+
 
 
 

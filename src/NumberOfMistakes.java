@@ -20,8 +20,8 @@ public class NumberOfMistakes {
     public void printInfo(){
         switch (mistakesCounter){
             case 1:
-                System.out.println("\n\t|" +"------------|" +
-                        "\n\t|" +
+                System.out.println("\n\t|" +"-----------|" +
+                                    "\n\t|" +"           |" +
                         "\n\t|" +
                         "\n\t|" +
                         "\n\t|" +
@@ -29,48 +29,48 @@ public class NumberOfMistakes {
                         "\n\t|" +"\\");
                 break;
             case 2:
-                System.out.println("\n\t|" +"------------|" +
-                        "\n\t|" +
-                        "\n\t|" +
-                        "\n\t|" +
-                        "\n\t|" +
+                System.out.println("\n\t|" +"-----------|" +
+                        "\n\t|" +"           0" +
+                        "\n\t|" +"           |" +
+                        "\n\t|" +"           |" +
+                        "\n\t|" +"           |" +
                         "\n\t|" +
                         "\n\t|" +"\\");
                 break;
             case 3:
-                System.out.println("\n\t|" +"------------|" +
-                        "\n\t|" +
-                        "\n\t|" +
-                        "\n\t|" +
-                        "\n\t|" +
+                System.out.println("\n\t|" +"-----------|" +
+                        "\n\t|" +"           0" +
+                        "\n\t|" +"           |\\" +
+                        "\n\t|" +"           |" +
+                        "\n\t|" +"           |" +
                         "\n\t|" +
                         "\n\t|" +"\\");
                 break;
             case 4:
-                System.out.println("\n\t|" +"------------|" +
-                        "\n\t|" +
-                        "\n\t|" +
-                        "\n\t|" +
-                        "\n\t|" +
+                System.out.println("\n\t|" +"-----------|" +
+                        "\n\t|" +"           0" +
+                        "\n\t|" +"          /|\\" +
+                        "\n\t|" +"           |" +
+                        "\n\t|" +"           |" +
                         "\n\t|" +
                         "\n\t|" +"\\");
                 break;
             case 5:
-                System.out.println("\n\t|" +"------------|" +
-                        "\n\t|" +
-                        "\n\t|" +
-                        "\n\t|" +
-                        "\n\t|" +
-                        "\n\t|" +
+                System.out.println("\n\t|" +"-----------|" +
+                        "\n\t|" +"           0" +
+                        "\n\t|" +"          /|\\" +
+                        "\n\t|" +"           |" +
+                        "\n\t|" +"           |" +
+                        "\n\t|" +"            \\" +
                         "\n\t|" +"\\");
                 break;
             case 6:
-                System.out.println("\n\t|" +"------------|" +
-                        "\n\t|" +
-                        "\n\t|" +
-                        "\n\t|" +
-                        "\n\t|" +
-                        "\n\t|" +
+                System.out.println("\n\t|" +"-----------|" +
+                        "\n\t|" +"           0" +
+                        "\n\t|" +"          /|\\" +"\t\t\t\tВЫ"+
+                        "\n\t|" +"           |" + "\t\t\tПРОИГРАЛИ!" +
+                        "\n\t|" +"           |" +
+                        "\n\t|" +"          / \\" +
                         "\n\t|" +"\\");
                 break;
         }
