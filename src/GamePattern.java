@@ -3,6 +3,7 @@ import java.util.Random;
 public class GamePattern {
 
     StringBuffer wordOfPoints= new StringBuffer();
+    NumberOfMistakes numberOfMistakes = new NumberOfMistakes();
 
 
     private final String randomWord;
@@ -52,6 +53,9 @@ public class GamePattern {
                 System.out.println(changeLetter(a));
             } else {
                 System.out.println("Упс... Буквы " + a + " нет в слове.");
+                numberOfMistakes.setNextCount();
+                System.out.println("Текущее количество ошибок: " + numberOfMistakes.getMistakesCounter());
+                numberOfMistakes.printInfo();
             }
         } else {
             System.out.println("Incorrect input");

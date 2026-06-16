@@ -9,7 +9,6 @@ public class UIClass {
         boolean running = true;
         boolean playRunning = true;
         char inputLetter;
-        NumberOfMistakes numberOfMistakes = new NumberOfMistakes();
         while(running) {
             System.out.println("\n 1. Начать игру." +
                     "\n 2. Выйти из игры." +
