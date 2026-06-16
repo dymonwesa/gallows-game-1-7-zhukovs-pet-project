@@ -26,19 +26,14 @@ public class UIClass {
                         System.out.println("Введите букву: ");
                         inputLetter = scanner.next().charAt(0);
                         gamePattern.printResultMove(inputLetter);
-                        if(gamePattern.isWin()) {
-                            System.out.println("");
+                        if(gamePattern.isWordGuessed()) {
+                            System.out.println("ВЫ ВЫИГРАЛИ!");
+                            playRunning = false;
+                        } else if(gamePattern.isLose()){
+                            System.out.println("ВЫ ПРОИГРАЛИ!");
+                            playRunning = false;
                         }
-
                     }
-
-
-
-
-
-
-
-
                     break;
 
                 case 2:

@@ -67,8 +67,8 @@ public class NumberOfMistakes {
             case 6:
                 System.out.println("\n\t|" +"-----------|" +
                         "\n\t|" +"           0" +
-                        "\n\t|" +"          /|\\" +"\t\t\t\tВЫ"+
-                        "\n\t|" +"           |" + "\t\t\tПРОИГРАЛИ!" +
+                        "\n\t|" +"          /|\\" +
+                        "\n\t|" +"           |" +
                         "\n\t|" +"           |" +
                         "\n\t|" +"          / \\" +
                         "\n\t|" +"\\");

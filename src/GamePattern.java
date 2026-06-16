@@ -13,7 +13,7 @@ public class GamePattern {
 
     Random random = new Random();
     final String[] list = {
-            "собака"
+            "собака", "кошка", "атмосфера", "диван", "знак", "зеркало"
 
     };
 
@@ -86,21 +86,24 @@ public class GamePattern {
 
 
     boolean isWordGuessed(){
-        for (int i =0; i <wordOfPoints.length(); i++) {
-            if(wordOfPoints.charAt(i) != '*') {
-                return false;
+        int hideCounter = 0;
+        for (int i =0; i < wordOfPoints.length(); i++) {
+            if(wordOfPoints.charAt(i) == '*') {
+                hideCounter++;
             }
         }
-        return true;
-    }
-
-    boolean isWin(){
-        if(numberOfMistakes.getMistakesCounter() >= 6) {
-            return false;
-        } else if (numberOfMistakes.getMistakesCounter() < 6 && isWin()){
+        if (hideCounter == 0){
             return true;
         }
+        return false;
 
+    }
+
+    boolean isLose(){
+        if(numberOfMistakes.getMistakesCounter() >= 6) {
+            return true;
+        }
+        return false;
     }
 
 
