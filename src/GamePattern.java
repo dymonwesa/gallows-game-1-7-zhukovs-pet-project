@@ -7,19 +7,24 @@ public class GamePattern {
             "собака"
 
     };
-
-    private String randomWord;
+    private final String wordOfPoints;
+    private final String randomWord;
 
 
 
 
     public GamePattern(){
         this.randomWord = list[random.nextInt(list.length)];
+        this.wordOfPoints = getPointsOfLength();
     }
 
     String getRandomWord(){
         return randomWord;
 
+    }
+
+    public String getWordOfPoints() {
+        return wordOfPoints;
     }
 
     boolean compareChars(char a){
@@ -51,14 +56,13 @@ public class GamePattern {
 
 
 
-    void printPointsOfLength(){
+    String getPointsOfLength(){
         String lineOfPoints = "";
         char p = '*';
         for (int i=0; i<randomWord.length(); i++){
             lineOfPoints += p;
         }
-        System.out.println(lineOfPoints);
-
+        return lineOfPoints;
     }
 
 
