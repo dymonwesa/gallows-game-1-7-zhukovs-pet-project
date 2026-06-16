@@ -2,20 +2,24 @@ import java.util.Random;
 
 public class GamePattern {
 
+    StringBuffer wordOfPoints= new StringBuffer();
+
+
+    private final String randomWord;
+    //---------------------later
+    //private StringBuffer usedLettersList = new StringBuffer();
+
+
     Random random = new Random();
     final String[] list = {
             "собака"
 
     };
-    private final String wordOfPoints;
-    private final String randomWord;
-
-
 
 
     public GamePattern(){
         this.randomWord = list[random.nextInt(list.length)];
-        this.wordOfPoints = getPointsOfLength();
+        this.wordOfPoints.append(getPointsOfLength());
     }
 
     String getRandomWord(){
@@ -23,7 +27,7 @@ public class GamePattern {
 
     }
 
-    public String getWordOfPoints() {
+    public StringBuffer getWordOfPoints() {
         return wordOfPoints;
     }
 
@@ -45,7 +49,7 @@ public class GamePattern {
         if (Character.isLetter(a)) {
             if (compareChars(a)) {
                 System.out.println("Буква " + a + " есть в слове.");
-
+                System.out.println(changeLetter(a));
             } else {
                 System.out.println("Упс... Буквы " + a + " нет в слове.");
             }
@@ -64,6 +68,16 @@ public class GamePattern {
         }
         return lineOfPoints;
     }
+
+    StringBuffer changeLetter(char a) {
+        for (int i =0; i<randomWord.length();i++){
+            if (randomWord.charAt(i) == a){
+                wordOfPoints.replace(i ,i+1, String.valueOf(a));
+            }
+        }
+        return wordOfPoints;
+    }
+
 
 
 
