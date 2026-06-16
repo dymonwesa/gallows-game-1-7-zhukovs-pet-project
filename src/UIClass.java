@@ -22,6 +22,7 @@ public class UIClass {
                     GamePattern gamePattern = new GamePattern();
                     String mainWord = gamePattern.getRandomWord();
                     System.out.println(mainWord);
+                    gamePattern.printPointsOfLength();
                     System.out.println("В заданном слове " + gamePattern.getLength(mainWord) + " букв" );
                     while(playRunning) {
                         System.out.println("Введите букву: ");

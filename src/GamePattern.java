@@ -6,12 +6,9 @@ public class GamePattern {
     final String[] list = {
             "собака"
 
-
     };
 
     private String randomWord;
-
-
 
 
 
@@ -51,6 +48,20 @@ public class GamePattern {
             System.out.println("Incorrect input");
         }
     }
+
+
+
+    void printPointsOfLength(){
+        String lineOfPoints = "";
+        char p = '*';
+        for (int i=0; i<randomWord.length(); i++){
+            lineOfPoints += p;
+        }
+        System.out.println(lineOfPoints);
+
+    }
+
+
 
 
 
