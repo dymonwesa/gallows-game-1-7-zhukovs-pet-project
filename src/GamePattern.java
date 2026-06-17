@@ -7,8 +7,7 @@ public class GamePattern {
 
 
     private final String randomWord;
-    //---------------------later
-    //private StringBuffer usedLettersList = new StringBuffer();
+    InputLetters inputLetters = new InputLetters();
 
 
     Random random = new Random();
@@ -49,19 +48,29 @@ public class GamePattern {
     void printResultMove(char a){
         if (Character.isLetter(a)) {
             if (compareChars(a)) {
+                inputLetters.addInputLetter(a);
+                if (!inputLetters.isLetterNew(a)) {
+                    System.out.println("Вы уже вводили букву " + a);
+                } else {
                 System.out.println("Буква " + a + " есть в слове.");
                 System.out.println(changeLetter(a));
+                }
             } else {
+                inputLetters.addInputLetter(a);
+                 if (!inputLetters.isLetterNew(a)) {
+                    System.out.println("Вы уже вводили букву " + a);
+                } else {
                 System.out.println("Упс... Буквы " + a + " нет в слове.");
                 numberOfMistakes.setNextCount();
                 System.out.println("Текущее количество ошибок: " + numberOfMistakes.getMistakesCounter());
-                numberOfMistakes.printInfo();
+                numberOfMistakes.printInfo(); }
             }
         } else {
             System.out.println("Incorrect input");
         }
     }
 
+    
 
 
     String getPointsOfLength(){
