@@ -48,18 +48,18 @@ public class GamePattern {
     void printResultMove(char a){
         if (Character.isLetter(a)) {
             if (compareChars(a)) {
-                inputLetters.addInputLetter(a);
                 if (!inputLetters.isLetterNew(a)) {
                     System.out.println("Вы уже вводили букву " + a);
                 } else {
+                inputLetters.addInputLetter(a);
                 System.out.println("Буква " + a + " есть в слове.");
                 System.out.println(changeLetter(a));
                 }
             } else {
-                inputLetters.addInputLetter(a);
                  if (!inputLetters.isLetterNew(a)) {
                     System.out.println("Вы уже вводили букву " + a);
                 } else {
+                inputLetters.addInputLetter(a);
                 System.out.println("Упс... Буквы " + a + " нет в слове.");
                 numberOfMistakes.setNextCount();
                 System.out.println("Текущее количество ошибок: " + numberOfMistakes.getMistakesCounter());

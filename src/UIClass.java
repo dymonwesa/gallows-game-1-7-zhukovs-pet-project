@@ -44,17 +44,7 @@ public class UIClass {
 
             }
 
-
-
-
-
-
-
-
-
         }
-
-
 
     }
 
