@@ -18,7 +18,6 @@ public class UIClass {
                 case 1:
                     GamePattern gamePattern = new GamePattern();
                     String mainWord = gamePattern.getRandomWord();
-                    System.out.println(mainWord);
                     System.out.println(gamePattern.getPointsOfLength());
                     System.out.println("В заданном слове " + gamePattern.getLength(mainWord) + " букв" );
                     boolean playRunning = true;
