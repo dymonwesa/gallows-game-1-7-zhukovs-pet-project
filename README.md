@@ -3,7 +3,8 @@
 Консольная игра «Виселица» на Java. Компьютер загадывает случайное слово из встроенного списка, игрок вводит буквы по одной, пытаясь угадать слово до того, как закончатся попытки.
 
 ## Стек
-https://vitalik.one/sub/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJNYXBDbGFpbXMiOm51bGwsInN1YiI6NjEyNDYyOTg2LCJ2ZXIiOjF9.6luowJWZ4qPkkyjNNV8iQjpyDAH7PkX7wN4Nqz1z64o
+
+
 - Java
 - Без сборщика (Maven/Gradle не используются) — проект запускается напрямую из IntelliJ IDEA
 - Ввод через `Scanner` (консоль)
